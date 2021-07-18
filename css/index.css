@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", monospace;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+
+header {
+  width: 100vw;
+  height: 70%;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+header nav .nav-container--logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .icons-container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .icons {
+  justify-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: end;
+}
+header .hero-container {
+  /*background-image: url("../assets/hero2.jpg");*/
+  width: 100vw;
+  border: 1px solid red;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .hero-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 6.6em;
+}
+
+section .hero-title h1 {
+  font-size: 3.2em;
+  margin-bottom: 0;
+}
+
+div .hero-title p {
+  font-size: 1.8em;
+  color: black;
+  margin-top: 0;
+}
+div .hero-title button {
+  background-color: black;
+  color: white;
+  border-radius: 0.4em;
+  width: 12em;
+  height: 2em;
+  font-size: 1em;
+}
+/*.wrapper {
+  max-inline-size: 1180px;
+  padding-inline-end: 4em;
+  padding-inline-start: 4em;
+  align-items: center;
+}*/
+main h2 {
+  text-align: center;
+}
+
+main .container-sales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+main .main-container--sales {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*  grid-template-rows: 2fr; */
+  grid-column-gap: 5%;
+}
+
+main .container-form {
+  display: flex;
+
+  width: 100%;
+  margin-left: 6em;
+  margin-right: 6em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
