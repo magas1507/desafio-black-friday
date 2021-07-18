@@ -4,7 +4,6 @@
   font-family: "Roboto", monospace;
   margin: 0;
   padding: 0;
-  max-width: 100%;
 }
 a {
   text-decoration: none;
@@ -21,12 +20,10 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  margin-right: 50px;
-  margin-left: 50px;
 }
 
 header nav .nav-container--logos {
@@ -49,12 +46,13 @@ header .icons {
 }
 header .hero-container {
   /*background-image: url("../assets/hero2.jpg");*/
-  width: 100vw;
+  width: 100%;
   border: 1px solid red;
   height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
 }
 
 header .hero-title {
@@ -65,17 +63,18 @@ header .hero-title {
   margin-left: 6.6em;
 }
 
-section .hero-title h1 {
+header section .hero-title h1 {
   font-size: 3.2em;
   margin-bottom: 0;
 }
 
-div .hero-title p {
+header section .hero-title p {
   font-size: 1.8em;
   color: black;
   margin-top: 0;
 }
-div .hero-title button {
+
+header section .hero-title button {
   background-color: black;
   color: white;
   border-radius: 0.4em;
@@ -89,8 +88,13 @@ div .hero-title button {
   padding-inline-start: 4em;
   align-items: center;
 }*/
+main {
+  width: 100%;
+}
 main h2 {
+  margin-top: 5%;
   text-align: center;
+  margin-bottom: 5%;
 }
 
 main .container-sales {
@@ -108,11 +112,9 @@ main .main-container--sales {
 
 main .container-form {
   display: flex;
-
   width: 100%;
-  margin-left: 6em;
-  margin-right: 6em;
+  padding-left: 6em;
+  padding-right: 6em;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
