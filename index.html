@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="css/font/flaticon.css" />
+    <link rel="stylesheet" href="css/mediaQuerys.css" />
     <title>Black Friday</title>
   </head>
   <body>
@@ -36,54 +37,53 @@
       </section>
     </header>
     <main class="main-container">
-      <!-- <div class="wrapper"> -->
       <h2>OFERTAS</h2>
       <section class="container-sales">
         <div class="main-container--sales">
           <article class="container-sale--article">
-            <img src="assets/cel.png" alt="" />
+            <img src="assets/cel.png" alt="telefone" />
             <h3>Telefone</h3>
           </article>
           <article class="container-sale--article">
-            <img src="assets/eletrodomestico.png" alt="" />
+            <img src="assets/eletrodomestico.png" alt="electrodomestico" />
             <h3>eletrodómesticos</h3>
           </article>
           <article class="container-sale--article">
-            <img src="assets/laptops.png" alt="" />
+            <img src="assets/laptops.png" alt="Laptops" />
             <h3>Laptops</h3>
           </article>
           <article class="container-sale--article">
-            <img src="assets/camera.png" alt="" />
+            <img src="assets/camera.png" alt="câmera" />
             <h3>Câmera</h3>
           </article>
         </div>
       </section>
       <section class="container-form">
-        <form id="form">
-          <fieldset class="container-form--fieldset">
-            <h3>Cadastre-se e seja a Primeira em receber ofertas</h3>
-            <input
-              type="text"
-              id="input-form"
-              name="name"
-              placeholder="Nombre"
-              required
-            />
-            <input
-              type="email"
-              id="input-form"
-              name="email"
-              placeholder="Email"
-              require
-            />
-            <button class="button" id="openModal" type="submit">Enviar</button>
-          </fieldset>
-        </form>
+        <div class="container-background">
+          <figure>
+            <img src="./assets/Illustration.png" alt="" />
+          </figure>
+          <div id="content">
+            <form action="" id="form">
+              <h3>Cadastre-se e seja a primeira em receber ofertas</h3>
+              <input type="text" id="name" placeholder="Nombre" required />
+              <input type="email" id="email" placeholder="Email" require />
+              <button
+                class="button"
+                id="openModal"
+                type="submit"
+                value="cadastrar"
+              >
+                Cadastrar
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
-      <!--    </div> -->
     </main>
     <footer>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

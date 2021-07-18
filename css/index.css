@@ -4,6 +4,7 @@
   font-family: "Roboto", monospace;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -14,9 +15,7 @@ a {
 header {
   width: 100vw;
   height: 70%;
-  margin: 0;
 }
-
 nav {
   display: flex;
   flex-direction: row;
@@ -24,6 +23,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 header nav .nav-container--logos {
@@ -45,9 +46,8 @@ header .icons {
   justify-self: end;
 }
 header .hero-container {
-  /*background-image: url("../assets/hero2.jpg");*/
+  background-image: url("../assets/hero2.jpg");
   width: 100%;
-  border: 1px solid red;
   height: 70vh;
   background-size: cover;
   background-position: center;
@@ -82,19 +82,15 @@ header section .hero-title button {
   height: 2em;
   font-size: 1em;
 }
-/*.wrapper {
-  max-inline-size: 1180px;
-  padding-inline-end: 4em;
-  padding-inline-start: 4em;
-  align-items: center;
-}*/
+
 main {
-  width: 100%;
+  width: 100vw;
 }
 main h2 {
   margin-top: 5%;
   text-align: center;
   margin-bottom: 5%;
+  font-size: 3.2em;
 }
 
 main .container-sales {
@@ -107,14 +103,73 @@ main .main-container--sales {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /*  grid-template-rows: 2fr; */
-  grid-column-gap: 5%;
+  grid-column-gap: 1.5%;
+  margin-bottom: 20px;
 }
 
+main .main-container--sales h3 {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
 main .container-form {
-  display: flex;
-  width: 100%;
-  padding-left: 6em;
-  padding-right: 6em;
+  /*  padding-left: 10em;
+  padding-right: 8em; */
   flex-direction: column;
   justify-content: center;
+}
+main .container-form .container-background {
+  background-image: url("../assets/form-backgroud.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 2%;
+  height: 180px;
+  border: 0;
+  margin-bottom: 2%;
+}
+
+main form h3 {
+  margin-bottom: 2%;
+  font-size: 1.5em;
+}
+
+main form input {
+  border-radius: 5px;
+  width: 50%;
+  border: 0;
+  margin-bottom: 1%;
+  align-items: initial;
+  padding: 0.5em 0.5rem;
+  border: 0;
+  font-weight: 600;
+}
+
+main form button {
+  background-color: black;
+  color: white;
+  border-radius: 0.4em;
+  width: 12em;
+  height: 2em;
+  font-size: 1em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  height: 130px;
 }
